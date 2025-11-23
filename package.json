@@ -1,0 +1,25 @@
+{
+  "name": "mental-health-analyzer",
+  "version": "1.0.0",
+  "description": "AI-powered mental health assessment and support platform",
+  "scripts": {
+    "install:all": "cd frontend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "dev:backend": "uvicorn api.index:app --reload --host 0.0.0.0 --port 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleem227/Mental_Health_Analyzer.git"
+  },
+  "keywords": [
+    "mental-health",
+    "ai",
+    "chatbot",
+    "mood-detection",
+    "fastapi",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT"
+}

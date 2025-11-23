@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional, List, Dict
 from dotenv import load_dotenv
-from prompt_for_psychiatrist import get_psychiatrist_prompt
+from .prompt_for_psychiatrist import get_psychiatrist_prompt
 
 # Load environment variables from .env
 load_dotenv()
@@ -21,15 +21,6 @@ def chat_with_psychiatrist(
 ) -> Optional[str]:
     """
     Send a message to the psychiatrist chatbot and get a response.
-
-    Args:
-        user_message: The user's current message
-        current_mood: The user's detected mood for this session
-        mood_history: List of previous mood logs
-        conversation_history: List of previous messages in this session
-
-    Returns:
-        The psychiatrist's response or None if error
     """
 
     # Generate system prompt with mood context

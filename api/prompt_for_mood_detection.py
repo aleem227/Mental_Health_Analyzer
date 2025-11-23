@@ -110,10 +110,10 @@ You must output ONE of these 5 moods ONLY:
 ------------------------------------------------------------
 CLASSIFICATION RULE (IMPORTANT)
 ------------------------------------------------------------
-1. If strong stress signals appear → mood = Stressed  
-2. If sadness, low mood, loss of interest, isolation, emotional instability → Depressed/Low  
-3. If fatigue, exhaustion, low energy → Tired/Exhausted  
-4. If mostly okay, balanced, no strong indicators → Neutral  
+1. If strong stress signals appear → mood = Stressed
+2. If sadness, low mood, loss of interest, isolation, emotional instability → Depressed/Low
+3. If fatigue, exhaustion, low energy → Tired/Exhausted
+4. If mostly okay, balanced, no strong indicators → Neutral
 5. If positive emotions, calmness, clarity → Happy/Calm
 
 ------------------------------------------------------------

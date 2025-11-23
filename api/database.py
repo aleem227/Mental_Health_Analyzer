@@ -11,7 +11,9 @@ def get_pkt_now():
     """Get current time in Pakistan Standard Time."""
     return datetime.now(PKT).strftime("%Y-%m-%d %H:%M:%S")
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "mood_tracker.db")
+
+# Use /tmp for serverless environments like Vercel, current directory for local dev
+DB_PATH = os.getenv("DB_PATH", os.path.join(os.path.dirname(os.path.dirname(__file__)), "mood_tracker.db"))
 
 
 def get_connection():
@@ -155,8 +157,6 @@ def get_user_mood_history(username: str) -> List[Dict]:
         for row in rows
     ]
 
-
-# ============== CHAT SESSION FUNCTIONS ==============
 
 def create_chat_session(user_id: int, mood_log_id: int) -> int:
     """Create a new chat session. Returns session id."""

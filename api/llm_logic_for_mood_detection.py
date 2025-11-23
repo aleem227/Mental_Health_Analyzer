@@ -3,14 +3,15 @@ import json
 import os
 from typing import Optional, Dict
 from dotenv import load_dotenv
-from prompt_for_mood_detection import system_prompt
+from .prompt_for_mood_detection import system_prompt
 
 # Load environment variables from .env
 load_dotenv()
 
-MODEL = "gpt-oss:20b-cloud"  # e.g., "llama3.1:latest"
+MODEL = "gpt-oss:20b-cloud"
 OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY")
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/api/chat")
+
 
 def query_mood_model(answers: Dict[str, str], system_prompt: str) -> Optional[str]:
     """
